@@ -8,11 +8,11 @@ import time
 
 # Create the main window
 root = tk.Tk()
-root.iconbitmap("icon/icon.ico")
+root.iconbitmap("web scraper/icon/icon.ico")
 root.title("Web Scraper")
 root.geometry("800x600")
 # root.configure(bg='#D3D3D3')
-bgimg = tk.PhotoImage(file="icon.png")
+bgimg = tk.PhotoImage(file="web scraper/icon.png")
 limg = Label(root, i=bgimg)
 limg.pack(side=tk.TOP)
 
@@ -32,7 +32,7 @@ help_menu.add_command(label="Guide",
                       command=lambda: display_help_window(root))
 
 # Read the contents of the file
-with open("help.txt", "r") as file:
+with open("web scraper/help.txt", "r") as file:
     content = file.read()
 
 
@@ -118,7 +118,7 @@ def scrape():
             else:
                 price = "Not available"
             description = item.find(
-                class_='a-size-base-plus a-color-base a-text-normal')
+                'span',class_='a-size-medium a-color-base a-text-normal')
             if description:
                 description = description.text
             else:
