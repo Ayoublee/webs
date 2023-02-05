@@ -1,0 +1,7 @@
+This program is a web scraper that allows you to extract information from websites such as eBay and Amazon.
+To use the program, open the main window by running the program. The window has a menu bar with options for "File" and "Help".
+In the "File" menu, you can choose "Export" to export the scraped data or "Exit" to exit the program.
+The "Help" menu has a "Help Topics" option which opens a window with additional information about the program.
+To start scraping, choose the website you want to scrape data from (either eBay or Amazon), enter the keyword you want to search for in the designated field, and click on the "Scrape" button.
+The scraped data will be displayed in the textbox. The progress of the scraping process will be shown on a progress bar.
+If you have any questions or need additional help, you can access the "Help Topics" option in the "Help" menu.
